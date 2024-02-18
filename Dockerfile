@@ -12,4 +12,4 @@ RUN composer install
 EXPOSE 8000
 
 ENTRYPOINT ["php"]
-CMD ["artisan", "serve"]
+CMD ["artisan", "serve", "--port=8000"]
