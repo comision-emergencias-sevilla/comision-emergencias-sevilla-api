@@ -18,10 +18,11 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 COPY . .
-RUN composer install --optimize-autoloader --no-dev
-RUN php artisan config:cache
-RUN php artisan route:cache
-RUN php artisan view:cache
+RUN composer install
+#RUN composer install --optimize-autoloader --no-dev
+#RUN php artisan config:cache
+#RUN php artisan route:cache
+#RUN php artisan view:cache
 
 EXPOSE 8000
 
