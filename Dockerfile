@@ -1,5 +1,16 @@
 FROM php:fpm-alpine
 
+# Fix Security Vulnerabilities by upgrading Alpine Linux
+RUN apk add --upgrade apk-tools && \
+    apk upgrade --available
+
+# https://laravel.com/docs/10.x/deployment#server-requirements
+RUN apk --update --no-cache add --upgrade \
+    postgresql-dev
+
+RUN docker-php-ext-install \
+    pdo pdo_pgsql
+
 RUN curl -sS https://getcomposer.org/installer | php -- \
      --install-dir=/usr/local/bin --filename=composer
 
