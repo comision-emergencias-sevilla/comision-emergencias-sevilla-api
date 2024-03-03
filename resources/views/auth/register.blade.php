@@ -56,5 +56,10 @@
                 </x-button>
             </div>
         </form>
+
+        <x-slot name="footer">
+            <h2 class="text-xl text-bold text-center">Esta pantalla de registro es temporal.</h2>
+            <h2 class="text-center">La aplicación contará con un sistema de invitación.</h2>
+        </x-slot>
     </x-authentication-card>
 </x-guest-layout>
