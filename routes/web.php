@@ -16,7 +16,7 @@ use App\Http\Controllers\MigrateDatabaseController;
 */
 
 Route::get('/', function () {
-    return view('index-angular');
+    return view('layouts/welcome');
 });
 
 Route::middleware([
