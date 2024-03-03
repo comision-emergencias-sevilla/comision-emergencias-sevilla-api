@@ -27,6 +27,10 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    
+    Route::get('/app', function () {
+        return view('angular-app');
+    })->name('angular-app');
 });
 
 Route::get('/migrate-database', [MigrateDatabaseController::class, 'migrateDatabase']);
