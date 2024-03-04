@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\MigrateDatabaseController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,5 +30,3 @@ Route::middleware([
         return view('angular-app');
     })->name('angular-app');
 });
-
-Route::get('/migrate-database', [MigrateDatabaseController::class, 'migrateDatabase']);
