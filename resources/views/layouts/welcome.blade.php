@@ -33,7 +33,7 @@
               </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Recursos sociales (en construcción)</a>
+              <a href="/assets/docs/Guía de Recursos de Emergencias 2020 - COTSS.pdf" class="text-sm font-semibold leading-6 text-gray-900" download>Guía de Recursos</a>
               <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Residencias y pisos tutelados (en construcción)</a>
               <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Primeros auxilios psicológicos (en construcción)</a>
               <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Mapa de Sevilla (en construcción)</a>
